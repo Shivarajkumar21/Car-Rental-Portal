@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Customers </h2>
+    <table border="2">
+        <tr>
+            <td> <b>cust_id</b></td>
+            <td> <b>name </b></td>
+            <td> <b>address </b></td>
+            <td> <b>mobile_no </b></td>
+            <td> <b>email_id</b></td>
+            <td> <b>cust_type</b></td>
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.cust_id }}</td>
+            <td>{{ u.name }}</td>
+            <td>{{ u.address }}</td>
+            <td>{{ u.mobile_no }}</td>
+             <td>{{ u.email_id }}</td>
+            <td>{{ u.cust_type }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

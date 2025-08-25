@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Car Bookings</h2>
+    <table border="2">
+        <tr>
+            <td> <b>From</b></td>
+            <td> <b>To</b></td>
+            <td> <b>book_pick_date</b></td>
+            <td> <b>book_off_date</b></td>
+            <td> <b>Time</b></td>
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.City_Airport_Station_etc}}</td>
+            <td>{{ u.City_Airport_Station }}</td>
+            <td>{{ u.book_pick_date}}</td>
+            <td>{{ u.book_off_date}}</td>
+            <td>{{ u.Time}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

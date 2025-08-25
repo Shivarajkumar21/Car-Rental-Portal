@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Customers </h2>
+    <table border="2">
+        <tr>
+            <td> <b>driver_id</b></td>
+            <td> <b>name </b></td>
+            <td> <b>address </b></td>
+            <td> <b>mobile_no </b></td>
+            <td> <b>reference_given</b></td>
+            <td> <b>liscense_no</b></td>
+            <td> <b>liscense_type</b></td>
+            <td> <b>expire_date</b></td>
+            <td> <b>aadhar_no</b></td>
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.driver_id}}</td>
+            <td>{{ u.name}}</td>
+            <td>{{ u.address}}</td>
+            <td>{{ u.mobile_no }}</td>
+             <td>{{ u.reference_given }}</td>
+            <td>{{ u.liscense_no }}</td>
+             <td>{{ u.liscense_type }}</td>
+            <td>{{ u.expire_date }}</td>
+            <td>{{ u.aadhar_no }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Car Bookings</h2>
+    <table border="2">
+        <tr>
+            <td> <b>user name</b></td>
+            <td> <b>User type</b></td>
+            <td> <b>Mobile No.</b></td>
+            <td> <b>Email id</b></td>
+            <td> <b>Password</b></td>
+
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.Username}}</td>
+            <td>{{ u.mobileno}}</td>
+            <td>{{ u.emailid}}</td>
+            <td>{{ u.Password}}</td>
+            <td>{{ u.utype}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

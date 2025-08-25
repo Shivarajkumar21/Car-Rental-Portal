@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Car Bookings</h2>
+    <table border="2">
+        <tr>
+            <td> <b>car_id</b></td>
+            <td> <b>company</b></td>
+            <td> <b>rent</b></td>
+            <td> <b>make</b></td>
+            <td> <b>reg_no</b></td>
+            <td> <b>fuel_type</b></td>
+            <td> <b>capacity</b></td>
+            <td> <b>photo</b></td>
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.car_id}}</td>
+            <td>{{ u.company }}</td>
+            <td>{{ u.rent}}</td>
+            <td>{{ u.make}}</td>
+             <td>{{ u.reg_no}}</td>
+            <td>{{ u.fuel_type}}</td>
+            <td>{{ u.capacity}}</td>
+            <td><img src="/static/images/{{u.photo}}" width="100" height="100"></td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

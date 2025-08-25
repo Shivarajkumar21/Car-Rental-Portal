@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Car Bookings</h2>
+    <table border="2">
+        <tr>
+            <td> <b>booking_id </b></td>
+            <td> <b>cust_id</b></td>
+            <td> <b>car_id</b></td>
+            <td> <b>booking_date</b></td>
+            <td> <b>reg_date</b></td>
+            <td> <b>to_place</b></td>
+            <td> <b>no_of_days</b></td>
+            <td> <b>rent_id</b></td>
+            <td> <b>status</b></td>
+
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.booking_id}}</td>
+            <td>{{ u.cust_id}}</td>
+            <td>{{ u.car_id}}</td>
+            <td>{{ u.booking_date}}</td>
+             <td>{{ u.reg_date}}</td>
+            <td>{{ u.to_place}}</td>
+            <td>{{ u.no_of_days}}</td>
+            <td>{{ u.rent_id}}</td>
+            <td>{{ u.status}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

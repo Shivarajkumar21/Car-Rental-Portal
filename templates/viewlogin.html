@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Car Bookings</h2>
+    <table border="2">
+        <tr>
+            <td> <b>user name</b></td>
+            <td> <b>password</b></td>
+            <td> <b>user type</b></td>
+
+
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.Username}}</td>
+            <td>{{ u.Password}}</td>
+            <td>{{ u.utype}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

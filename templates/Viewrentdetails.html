@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2> Car Bookings</h2>
+    <table border="2">
+        <tr>
+            <td> <b>rent_id</b></td>
+            <td> <b>car_id</b></td>
+            <td> <b>rateper_km</b></td>
+            <td> <b>driver_charges</b></td>
+        </tr>
+        {% for u in user_dict %}
+        <tr>
+            <td>{{ u.rent_id}}</td>
+            <td>{{ u.car_id }}</td>
+            <td>{{ u.rateper_km}}</td>
+            <td>{{ u.driver_charges}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>
